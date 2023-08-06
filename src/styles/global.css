@@ -6,7 +6,7 @@ html {
 body {
   margin: 0 auto;
   width: 100%;
-  /* max-width: 90ch; */
+  max-width: 80ch;
   padding: 1rem;
   line-height: 1.5;
 }
@@ -22,6 +22,10 @@ h1 {
 
 /* nav styles */
 .hamburger {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   cursor: pointer;
   padding-top: .5rem;
 }
@@ -63,10 +67,7 @@ h1 {
 
 @media screen and (min-width: 636px) {
   .nav-links {
-    margin-left: 5em;
-    display: block;
-    position: static;
-    width: auto;
+    display: flex;
     background: none;
   }
 
