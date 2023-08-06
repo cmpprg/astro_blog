@@ -1,0 +1,19 @@
+---
+import Navigation from "./Navigation.astro";
+
+const {title} = Astro.props;
+---
+<div class="header">
+  <h1>{title}</h1>
+  <nav>
+    <Navigation />
+  </nav>
+</div>
+
+<style>
+  div.header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+</style>
