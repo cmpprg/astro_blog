@@ -1,4 +1,5 @@
 ---
+import TagsList from "../components/TagsList.astro";
 import BaseLayout from "./BaseLayout.astro"
 const {frontmatter: fm} = Astro.props
 ---
@@ -8,6 +9,7 @@ const {frontmatter: fm} = Astro.props
   <p><strong>Written by</strong> {fm.author}</p>
   <img src={fm.image.url} alt={fm.image.alt} srcset="">
   <slot />
+  <TagsList tags={fm.tags} />
   <style>
     img {
       background-color: black;
